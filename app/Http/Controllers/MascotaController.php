@@ -26,6 +26,9 @@ class MascotaController extends Controller
     public function create()
     {
         //
+        
+        return view('admin.mascotas.agregarmascota');
+
     }
 
     /**
@@ -37,6 +40,7 @@ class MascotaController extends Controller
     public function store(Request $request)
     {
         //
+        
     }
 
     /**
