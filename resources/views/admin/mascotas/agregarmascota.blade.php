@@ -7,12 +7,20 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Dashboard') }}</div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> a270ddb8dd79ac38e2d7361fdc2f0c8901ef4469
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
                     @endif
+<<<<<<< HEAD
+=======
+
+>>>>>>> a270ddb8dd79ac38e2d7361fdc2f0c8901ef4469
                     {{ __('You are logged in!') }}
                 </div>
             </div>
@@ -180,4 +188,8 @@
   </div>
 </div>
 
+<<<<<<< HEAD
 @endsection
+=======
+@endsection
+>>>>>>> a270ddb8dd79ac38e2d7361fdc2f0c8901ef4469
