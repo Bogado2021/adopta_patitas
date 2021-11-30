@@ -7,20 +7,12 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Dashboard') }}</div>
-<<<<<<< HEAD
-=======
-
->>>>>>> a270ddb8dd79ac38e2d7361fdc2f0c8901ef4469
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
                     @endif
-<<<<<<< HEAD
-=======
-
->>>>>>> a270ddb8dd79ac38e2d7361fdc2f0c8901ef4469
                     {{ __('You are logged in!') }}
                 </div>
             </div>
@@ -127,58 +119,79 @@
               {{csrf_field()}}
 
               <div class="mb-3">
-                <label for="Nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" name="Nombre" id="Nombre" placeholder="Nombre">
+                <label for="nombre" class="form-label">Nombre del animal</label>
+                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
               </div>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Animal</option>
-                <option value="1">Perro</option>
-                <option value="2">Gato</option>
-                <option value="3">Otro</option>
-              </select>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Sexo</option>
-                <option value="1">Hembra</option>
-                <option value="2">Macho</option>
-              </select>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Tamaño</option>
-                <option value="1">Pequeño</option>
-                <option value="2">Mediano</option>
-                <option value="3">Grande</option>
-              </select>
-              <div class="mb-3">
-                <label for="Edad" class="form-label">Edad</label>
-                <input type="text" class="form-control" name="Edad" id="Edad" placeholder="Edad">
+              <div class="form-group">
+                <label for="animal">Tipo de animal</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Animal</option>
+                  <option value="1">Perro</option>
+                  <option value="2">Gato</option>
+                </select>
               </div>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Vacuna</option>
-                <option value="1">Vacuna al día</option>
-                <option value="2">Sin vacuna al día</option>
-              </select>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Enfermedad</option>
-                <option value="1">Sin niguna enfermedad</option>
-                <option value="2"></option>
-              </select>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Esterilizado</option>
-                <option value="1">SÍ</option>
-                <option value="2">Aun no</option>
-              </select>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Desparasitado</option>
-                <option value="1">SÍ</option>
-                <option value="2">Aun no</option>
-              </select>
-              <div class="mb-3">
-                <label for="Descripcion" class="form-label">Descripcion</label>
-                <textarea class="form-control" name="Descripcion" id="Descripcion" rows="3"></textarea>
+              <div class="form-group">
+                <label for="sexo">Sexo del animal</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Sexo</option>
+                  <option value="1">Hembra</option>
+                  <option value="2">Macho</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="tamaño">Tamaño del animal</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Tamaño</option>
+                  <option value="1">Pequeño</option>
+                  <option value="2">Mediano</option>
+                  <option value="3">Grande</option>
+                </select>
               </div>
               <div class="mb-3">
-                <label for="Foto" class="form-label">Foto</label>
-                <input type="file" class="form-control" name="Foto" id="Foto" placeholder="Foto">
+                <label for="edad" class="form-label">Edad aproximada del animal</label>
+                <input type="text" class="form-control" name="edad" id="edad" placeholder="Edad">
               </div>
+              <div class="form-group">
+                <label for="vacuna">Estado de vacunación</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Vacuna</option>
+                  <option value="1">Vacuna al día</option>
+                  <option value="2">Sin vacuna al día</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="enfermedad">Enfermedad que padece</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Enfermedad</option>
+                  <option value="1">Sin niguna enfermedad</option>
+                  <option value="2"></option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="esterilizado">¿Se encuentra esterilizado?</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Esterilizado</option>
+                  <option value="1">SÍ</option>
+                  <option value="2">Aun no</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="desparasitado">¿Se encuentra desparasitado?</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Desparasitado</option>
+                  <option value="1">SÍ</option>
+                  <option value="2">Aun no</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="descripcion" class="form-label">Descripcion</label>
+                <textarea class="form-control" name="descripcion" id="descripcion" rows="3"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="foto" class="form-label">Foto</label>
+                <input type="file" class="form-control" name="foto" id="foto" placeholder="Foto">
+              </div>
+              <button type="submit" class="btn btn-outline-success">Guadar</button>
               
             </form>
           </div>
@@ -188,8 +201,4 @@
   </div>
 </div>
 
-<<<<<<< HEAD
 @endsection
-=======
-@endsection
->>>>>>> a270ddb8dd79ac38e2d7361fdc2f0c8901ef4469

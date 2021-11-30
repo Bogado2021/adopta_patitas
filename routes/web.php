@@ -25,7 +25,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 /* mascota*/
 Route::get('/mascota', 'MascotaController@index')->name('mascota');
 Route::get('/agregarmascota', 'MascotaController@create')->name('agregarmascota');
-Route::post('/agregarmascota', 'MascotaController@store')->name('agregarmascota');
+Route::post('/guardarmascota', 'MascotaController@store')->name('agregarmascota');
 
 /* solicitud*/
 Route::get('/solicitud', 'SolicitudController@index')->name('solicitud');

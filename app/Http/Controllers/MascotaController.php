@@ -40,6 +40,9 @@ class MascotaController extends Controller
     public function store(Request $request)
     {
         //
+        $datosMascota=request()->all();
+
+        return response()->json($datosMascota);
         
     }
 
