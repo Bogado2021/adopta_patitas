@@ -17,6 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// ¿CÓMO FUNCIONA?
+Route::get('/c_funciona', 'PreguntaController@index');
+
 Auth::routes();
 
 //ADMIN
@@ -31,7 +34,7 @@ Route::post('/guardarmascota', 'MascotaController@store')->name('agregarmascota'
 Route::get('/solicitud', 'SolicitudController@index')->name('solicitud');
 
 /* usuarios*/
-Route::get('/mascota', 'MascotaController@index')->name('mascota');
+Route::get('/usuarios', 'MascotaController@index')->name('mascota');
 
 
 
@@ -43,17 +46,3 @@ Route::get('/userhome', 'UserhomeController@index')->name('userhome');
 /*adoptar*/
 Route::get('/adoptar', 'AdoptarController@index')->name('adoptar');
 /*cuenta*/
-
-
-
-
-
-
-
-
-
-
-
-
-// ¿CÓMO FUNCIONA?
-Route::get('/c_funciona', 'PreguntaController@index');

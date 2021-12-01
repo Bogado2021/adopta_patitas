@@ -119,11 +119,11 @@
               {{csrf_field()}}
 
               <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre del animal</label>
+                <label for="nombre" class="form-label">{{'Nombre del animal'}}</label>
                 <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
               </div>
               <div class="form-group">
-                <label for="animal">Tipo de animal</label>
+                <label for="animal">{{'Nombre del animal'}}</label>
                 <select class="form-select" aria-label="Default select example">
                   <option selected>Animal</option>
                   <option value="1">Perro</option>

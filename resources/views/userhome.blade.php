@@ -2,7 +2,7 @@
 
 @section('content')
 <ul class="m-0 nav-link p-0 fw-bold d-flex justify-content-center">
-    <a class="nav-link link-secondary" href="{{ route('login') }}">MI CUENTA</a>
+    <a class="nav-link link-secondary" href="#">MI CUENTA</a>
 </ul>
 <!-- <div class="container">
     <div class="row justify-content-center">

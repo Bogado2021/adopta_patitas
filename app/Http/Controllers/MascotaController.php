@@ -15,7 +15,7 @@ class MascotaController extends Controller
     public function index()
     {
         //
-        return view('admin.mascotas.mascota');
+        return view('admin.mascotas.index');
     }
 
     /**
